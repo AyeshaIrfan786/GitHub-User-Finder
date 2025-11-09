@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: #1f1d1d;
+    color: white;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#username {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+#username:focus {
+    box-shadow: 0 0 8px #d8dadb;
+    background-color: #fff;
+}
+
+
+#searchBtn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #f2f4f5;
+    color: #050505;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #d8dadb;
+}
