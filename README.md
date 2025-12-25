@@ -20,9 +20,9 @@ GitHub User Finder is a web application that allows users to search for GitHub p
 
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
-- JavaScript (ES6)  
+- HTML
+- CSS  
+- JavaScript   
 - GitHub Public API  
 
 ---
