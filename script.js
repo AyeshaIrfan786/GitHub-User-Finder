@@ -1,14 +1,12 @@
-//DOM element
 const searchBtn = document.getElementById('searchBtn');
 const usernameInput = document.getElementById('username');
 const resultDiv = document.getElementById('result');
 
-// Event listener for search button
 searchBtn.addEventListener('click', () => {
   const username = usernameInput.value.trim();
 
   if (username === '') {
-    resultDiv.innerHTML = '<p> Please Enter a GitHub username</p>';
+    resultDiv.innerHTML = '<p>Please Enter a GitHub username</p>';
     return;
   }
 
@@ -18,6 +16,7 @@ searchBtn.addEventListener('click', () => {
 // Fetch GitHub user data
 async function fetchUser(username) {
   try {
+  
     const response = await fetch(`https://api.github.com/users/${username}`);
 
     if (!response.ok) {
@@ -26,7 +25,6 @@ async function fetchUser(username) {
 
     const user = await response.json();
 
-    // Display user info
     resultDiv.innerHTML = `
       <div class="user-card">
         <img src="${user.avatar_url}" alt="${user.login}" class="avatar">
@@ -41,3 +39,4 @@ async function fetchUser(username) {
     resultDiv.innerHTML = `<p style="color: red;">${error.message}</p>`;
   }
 }
+
